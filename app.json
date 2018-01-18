@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/Freetrial/Freetrial"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "盖饭好物",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": "true",
+    "backgroundColor":"#fff",
+    "onReachBottomDistance":"100"
+  },
+    "tabBar": {
+      "backgroundColor": "#fff",
+      "selectedColor": "#228B22",
+      "position":"bottom",
+      "list": [
+        {
+          "pagePath": "pages/home/home",
+          "text": "主页"
+        },
+        {
+          "pagePath": "pages/Freetrial/Freetrial",
+          "text": "领取试用"
+        },
+        {
+          "pagePath": "pages/mine/mine",
+          "text": "我的"
+        }
+      ]
+    },
+    "networkTimeout": {
+     "request": 5000,
+     "downloadFile": 10000
+}
+}

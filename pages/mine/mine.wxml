@@ -1,0 +1,7 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+<view class='header_Box fl'>
+       <image src='{{userInfo.avatarUrl}}' mode='widthFix' class='header_Head' id='tu'> </image> 
+       <text>{{userInfo.nickName}}</text>
+    </view>
+</view>

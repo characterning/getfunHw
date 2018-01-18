@@ -1,0 +1,9 @@
+/* pages/home/home.wxss */
+.moeny{
+     background:red;
+     height:100rpx;
+     width:100rpx;
+     color: #fff;
+     text-align: center;
+     font-size: 20rpx;
+}

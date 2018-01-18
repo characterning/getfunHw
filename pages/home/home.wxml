@@ -1,0 +1,2 @@
+<!--pages/home/home.wxml-->
+<view animation="{{animationData}}" class='moeny'>红包</view>
