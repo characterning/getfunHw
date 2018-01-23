@@ -1,2 +1,66 @@
 <!--pages/home/home.wxml-->
-<view animation="{{animationData}}" class='moeny'>红包</view>
+<view class='container'>
+<view class='home-shdow' wx:if="{{shdow}}">
+<view class='RedEnvelopes' mode="widthFix">
+<navigator url="RedEnvelopes/RedEnvelopes">
+  <image src='/images/view-red-btn-normal.png' bindtap='getmoney' ></image></navigator>
+</view>
+</view>
+<image src='/images/btn-redenvelopes.png' class='money' mode="widthFix" bindtap='redenvelopes'></image>
+     <view class='home-head'>
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='true'>
+               <block wx:for="{{imgUrls}}">
+                    <swiper-item>
+                         <image src="{{item}}" class="slide-image" mode='widthFix' />
+                    </swiper-item>
+               </block>
+          </swiper>
+     </view>
+     <view class='Master-Evaluation'>
+          <view class='Master-text'>
+               <text class='text-Left'>达人测评</text>
+               <text class='text-Right'>查看更多 ></text>
+          </view>
+          <view class='EvaluationList' wx:for="{{imgUrls}}">
+               <view class='Evaluation-listLeft'>
+                    <image src='{{item}}' />
+               </view>
+               <view class='Evaluation-listRight'>
+                    <text>xxxxxxxxxxxxxxxxxx</text>
+                    <text>测评达人:xxx</text>
+               </view>
+               <view class='line'></view>
+          </view>
+     </view>
+     <view class='Master-Evaluation'>
+          <view class='Master-text'>
+               <text class='text-Left'>发现好物</text>
+               <text class='text-Right'>查看更多 ></text>
+          </view>
+          <view class='EvaluationList' wx:for="{{imgUrls}}">
+               <view class='Evaluation-listLeft'>
+                    <image src='{{item}}' />
+               </view>
+               <view class='Evaluation-listRight'>
+                    <text>xxxxxxxxxxxxxxxxxx</text>
+                    <text>盖饭好物</text>
+               </view>
+          <view class='line'></view>
+          </view>
+     </view>
+     <view class='Master-Evaluation'>
+          <view class='Master-text'>
+               <text class='text-Left'>好物优惠券</text>
+          </view>
+          <view class='EvaluationList' wx:for="{{imgUrls}}" bindtap="copy" data-link='{{item}}'>
+               <view class='Evaluation-listLeft'>
+                    <image src='{{item}}' />
+               </view>
+               <view class='Evaluation-listRight'>
+                    <text>xxxxxxxxxxxxxxxxxx</text>
+                    <text>天猫价：110.0元</text>
+               </view>
+               <view class='line'></view>
+          </view>
+     </view>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/RedEnvelopes/RedEnvelopes.wxml-->
+<view class='RedEnvelopes'>
+<view class='getList'>
+<text>马**刚刚领取99元红包</text>
+</view>
+<view class='getmoney'>
+<text>恭喜你领取到</text>
+<view><text>59.9</text>元</view>
+<text>在到微信-我-钱包-零钱中查看已领取的红包~</text>
+</view>
+</view>

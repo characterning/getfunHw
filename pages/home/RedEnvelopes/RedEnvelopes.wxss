@@ -1,0 +1,17 @@
+/* pages/RedEnvelopes/RedEnvelopes.wxss */
+.getList{
+     width: 100%;
+     background-color:#FFE1FF;
+}
+.getList>text{
+     display: inline-block;
+     width: 100%;
+     padding: 10rpx 0rpx;
+     text-align: center;
+     vertical-align: middle;
+}
+.getmoney{
+     width: 100%;
+     height: 350rpx;
+     background-color: #FF4040;
+}

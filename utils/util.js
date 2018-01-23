@@ -24,7 +24,6 @@ function authorize() {
 function isAuthorization(userInfo) {
      var that = this;
      var app = getApp();
-     console.log(JSON.stringify(userInfo));
      // app.apiPost(app.apiList.isAuthorization, {
      //      data: JSON.stringify(userInfo)
      // }, function (data) {
@@ -56,8 +55,19 @@ function getToken(callback) {
           }
      })
 }
+//获取首页初始数据
+function initialcontent(callBack) {
+     var app = getApp();
+     app.apiGet(app.apiList.initialcontent, function (data) {
+          app.globalData.content = data
+          // that.setData({
+          //      'content': data
+          // })
+     })
+}
 module.exports = {
   authorize: authorize,
   getToken: getToken,
-  isAuthorization: isAuthorization
+  isAuthorization: isAuthorization,
+  initialcontent: initialcontent
 }
